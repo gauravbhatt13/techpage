@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Blogs</h1>
+  <div class="row">
+    <div class="col-md-4" ng-repeat="item in home.data">
+
+      <div class="card card-default category-widget" ng-click="$state.go('blogs', {category: item.blogCategory})">
+        <div class="card-body category-widget-icon">
+          <img class="img-responsive center-block" ng-src="{{item.image}}">
+        </div>
+        <div class="card-footer">
+          <h4 class="category-widget-title">{{item.blogCategory}}</h4>
+          <p class="category-widget-description">
+            {{item.description}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
