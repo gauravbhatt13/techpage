@@ -48,6 +48,13 @@
         "charCount": 15,
         "blogHTML": "<p>Tset the retest</p>",
         "dateOfCreation": "2018-08-21T02:16:21.017Z"
+      },
+      {
+        "blogTitle": "really this works",
+        "wordCount": 4,
+        "charCount": 18,
+        "blogHTML": "<p>yes no store works</p>",
+        "dateOfCreation": "2018-08-21T02:27:59.408Z"
       }
     ]
   }
