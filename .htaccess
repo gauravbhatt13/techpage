@@ -1,0 +1,9 @@
+ExpiresActive On
+
+ExpiresByType application/json "access plus 1 seconds"
+
+ExpiresByType text/json "access plus 1 seconds"
+
+ExpiresByType text/plain "access plus 1 seconds"
+
+ExpiresDefault "access plus 1 month"
