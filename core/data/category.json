@@ -18,6 +18,13 @@
         "charCount": 17,
         "blogHTML": "<p>Real easy bloggin</p>",
         "dateOfCreation": "2018-08-20T03:20:11.119Z"
+      },
+      {
+        "blogTitle": "Testing a real new blog",
+        "wordCount": 6,
+        "charCount": 29,
+        "blogHTML": "<p>wow this works this is greate</p>",
+        "dateOfCreation": "2018-08-21T01:41:03.007Z"
       }
     ]
   },
