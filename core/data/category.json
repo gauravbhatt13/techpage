@@ -57,5 +57,19 @@
         "dateOfCreation": "2018-08-21T02:27:59.408Z"
       }
     ]
+  },
+  {
+    "blogCategory": "Machine Learning",
+    "image": "modules/home/assets/images/ML.png",
+    "blogs": [
+      {
+        "blogTitle": "What is Machine Learning.",
+        "blogDescription": "The basic concept of machine learning.",
+        "wordCount": 0,
+        "charCount": 0,
+        "blogHTML": "<h2>What is Machine Learning</h2>",
+        "dateOfCreation": "2018-07-13T18:36:15.700Z"
+      }
+    ]
   }
 ]
