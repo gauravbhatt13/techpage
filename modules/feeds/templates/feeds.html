@@ -1,17 +1,31 @@
 <div class="container">
-  <div ng-repeat="channel in channels">
-    <h2><a href="{{channel.link}}" target="_blank">{{channel.title}}</a></h2>
-    <img style="padding: 15px 0px;height: 200px" class="img-responsive" ng-if="channel.image.url" ng-src="{{channel.image.url}}"><br>
-    <div class="row" ng-repeat="chunk in channel.item">
-      <div class="col-md-4" ng-repeat="item in chunk">
-        <img style="padding: 15px 0px" ng-if="item.StoryImage" ng-src="{{item.StoryImage}}"><br>
-        <img style="padding: 15px 0px" class="img-responsive img-fluid" ng-if="item.imgSrc" ng-src="{{item.imgSrc}}">
-        <a href="{{item.link}}" target="_blank">
-          {{item.title}}
-        </a><br/>
-        <span ng-if="item.pubDate">({{item.pubDate | date:'d-MM-yyyy HH:mm'}})</span><br/>
+  <div class="row pull-right" style="margin-top: 50px" ng-if="showSearch">
+    <form class="form-inline">
+      <div class="form-group">
+        <input class="form-control" placeholder="Search hashtag/user...." type="text" id="search" ng-model="searchTerm">
+      </div>
+      <button class="btn btn-default" ng-click="searchHashTag(searchTerm)">Hashtag</button>
+      <button class="btn btn-default" ng-click="searchUser(searchTerm)">User</button>
+    </form>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div ng-repeat="channel in channels">
+        <h2><a href="{{channel.link}}" target="_blank">{{channel.title}}</a></h2>
+        <img style="padding: 15px 0px;height: 200px" class="img-responsive" ng-if="channel.image.url" ng-src="{{channel.image.url}}"><br>
+        <div class="row" ng-repeat="chunk in channel.item">
+          <div class="col-md-4" ng-repeat="item in chunk">
+            <img style="padding: 15px 0px" ng-if="item.StoryImage" ng-src="{{item.StoryImage}}"><br>
+            <img style="padding: 15px 0px" class="img-responsive img-fluid" ng-if="item.imgSrc" ng-src="{{item.imgSrc}}">
+            <a href="{{item.link}}" target="_blank">
+              {{item.title}}
+            </a><br/>
+            <span ng-if="item.pubDate">({{item.pubDate | date:'d-MM-yyyy HH:mm'}})</span><br/>
 
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
 </div>

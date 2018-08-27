@@ -10,33 +10,31 @@
       <a href="" target="_blank" aria-label="Gaurav Bhatt"></a>
       <a class="navbar-brand brand-text" href="#/"><img class="brand-img" src="assets/images/favicon/mstile-150x150.png"></a>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <!--  pb-mobile-menu-close directive allows mobile menu to close when item selected -->
-    <div class="collapse navbar-collapse" id="main-navbar" pb-mobile-menu-close>
+    <div class="collapse navbar-collapse" id="main-navbar">
 
       <ul class="nav navbar-nav">
         <li class="divider-vertical hidden-xs"></li>
         <li>
           <a href="" ui-sref="home">Tech</a>
         </li>
-        <li>
-          <a href="" ui-sref="news">News</a>
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Feeds</a>
+          <ul class="dropdown-menu pb-animate-menu">
+            <li>
+              <a ui-sref="news">News</a>
+            </li>
+            <li>
+              <a ui-sref="cricket">Cricket</a>
+            </li>
+          </ul>
         </li>
         <li>
-          <a href="" ui-sref="cricket">Cricket</a>
-        </li>
-        <li>
-          <a href="" ui-sref="deals">Deals</a>
+          <a ui-sref="deals">Twitter Search</a>
         </li>
         <!-- end left menus -->
 
       </ul>
-      <!-- end navbar-nav left -->
 
-
-      <!--/navbar-right -->
-    </div>
     <!-- /navbar-collapse -->
   </div>
   <!-- /container -->
